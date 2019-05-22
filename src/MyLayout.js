@@ -7,6 +7,7 @@ import 'antd/dist/antd.css';
 import {LongText} from './LongText';
 
 import './MyLayout.css';
+import LoginStatus from "./LoginStatus";
 
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -59,13 +60,15 @@ export class MyLayout extends Component {
                     </Menu>
                 </Sider>
                 <Layout style={{marginLeft: 200}}>
-                    <Header style={{background: '#fff', padding: 0}}/>
+                    <Header style={{background: '#fff', padding: 0}}>
+                        <LoginStatus/>
+                    </Header>
                     <Content style={{margin: '24px 16px 0', overflow: 'initial'}}>
                         <div style={{padding: 24, background: '#fff', textAlign: 'center'}}>
                             <Route path="/longtext" component={LongText}/>
                         </div>
                     </Content>
-                    <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer>
+                    <Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by XXX</Footer>
                 </Layout>
             </Layout>
         );
